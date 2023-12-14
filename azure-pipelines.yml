@@ -1,4 +1,9 @@
 # Starter pipeline
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/test-*.xml'
+    failTaskOnFailedTests: true
 - task: Bash@3
   inputs:
     targetType: 'inline'
