@@ -3,7 +3,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  name: MyOfficeMachine
 
 steps:
 - task: PublishTestResults@2
